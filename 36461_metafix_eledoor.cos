@@ -111,10 +111,6 @@ link va01 va02 100
 *
 
 *
-* ====== SCRIPTS ======
-*
-
-*
 ** DOOR SCRIPT
 
 ** BUG: If one of the doors is in the inventory and offscreen, this throws an error.
