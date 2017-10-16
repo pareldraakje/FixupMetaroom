@@ -156,6 +156,7 @@ scrp 2 2 36461 1
 					stop
 				endi
 				doif from eq norn
+					stim writ from 95 1
 					targ from
 					mvsf va02 va04
 				endi
@@ -176,6 +177,7 @@ scrp 3 1 36461 1
 	doif from eq pntr
 		anim [3 0 3 0]
 	else
+		stim writ from 94 1
 		anim [2 0 2 0]
 	endi
 
@@ -228,6 +230,7 @@ scrp 3 1 36461 2
 	doif from eq pntr
 		anim [3 0 3 0]
 	else
+		stim writ from 94 1
 		anim [1 0 1 0]
 	endi
 	over
