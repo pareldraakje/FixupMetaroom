@@ -132,13 +132,14 @@ scrp 2 2 36461 1
 					doif targ ne null
 						snde "buzz"
 						doif carr ne null
-						rtar 1 2 10
-						mesg wrt+ targ 126 "Destination is being carried" ownr 0
-						stop
-						elif fall eq 1
-						rtar 1 2 10
-						mesg wrt+ targ 126 "Destination is falling" ownr 0
-						stop
+							rtar 1 2 10
+							mesg wrt+ targ 126 "Destination is being carried" ownr 0
+							stop
+						endi
+						doif fall eq 1
+							rtar 1 2 10
+							mesg wrt+ targ 126 "Destination is falling" ownr 0
+							stop
 						endi
 					endi
 				endi
