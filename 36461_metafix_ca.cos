@@ -14,22 +14,52 @@
 new: simp 1 1 36461 "blnk" 1 1 1
 attr 16
 mvto 27150 208
-emit 1 1
+tick 2400
+emit 1 game "Light_Control"
+scrp 1 1 36461 9
+emit 1 game "Light_Control"
+endm
 * Mid level
 new: simp 1 1 36461 "blnk" 1 1 1
 attr 16
 mvto 26722 746
-emit 1 1
+emit 1 game "Light_Control"
+scrp 1 1 36461 9
+emit 1 game "Light_Control"
+endm
 * Lower level
 new: simp 1 1 36461 "blnk" 1 1 1
 attr 16
 mvto 27487 1128
-emit 1 1
+emit 1 game "Light_Control"
+scrp 1 1 36461 9
+emit 1 game "Light_Control"
+endm
 * Water
 new: simp 1 1 36461 "blnk" 1 1 1
 attr 16
 mvto 28015 590
-emit 1 0.7
+emit 1 game "Water_Light_Control"
+scrp 1 1 36461 9
+emit 1 game "Water_Light_Control"
+endm
+*Controller
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 28015 700
+tick 1200
+scrp 1 1 36462 9
+doif time eq 0 or 1
+	setv game "Light_Control" 1
+	setv game "Water_Light_Control" 0.7
+elif time eq 2 or 3
+	setv game "Light_Control" 0.7
+	setv game "Water_Light_Control" 0.5
+elif time eq 4
+	setv game "Light_Control" 0.4
+	setv game "Water_Light_Control" 0.2
+endi
+endm
 *
 ** Heat
 * Upper level
@@ -99,3 +129,4 @@ rscr
 enum 1 1 36461
 	kill targ
 next
+scrx 1 1 36461 9
