@@ -1,0 +1,85 @@
+**
+** Day/Night script
+**
+** Sprites&coding by Pilla.
+**
+**
+** Feel free to use this code and the sprites however you want.
+**
+**
+
+**
+** Caos2pray chunk
+**
+** Compiles the agent.
+**
+* CAOS2PRAY CHUNK
+*# Pray-File "FixupMetaroomDayNight.agents"
+*# DS-Name "Fixup Metaroom Day and Night"
+*# attach FixupRoomdd.blk FixupRoommd.blk FixupRoomn.blk
+*# desc = "A day/night cycle for the Fixup-Metaroom."
+*# Agent Animation File = "blnk.c16"
+*# Agent Sprite First Image = 1
+*# Agent Animation Gallery = "blnk"
+*
+*
+
+** Installation script
+* Create the controller: This agent checks whether the background fits the time of day.
+new: simp 1 1 36462 "blnk" 1 0 100
+* Move the controller to inside the metaroom
+mvto 26771 815
+* Find the metaroom ID
+setv ov00 gmap 26771 815
+setv va00 ov00
+
+* Add the background files to the game
+setv game "mapeditortmp" addm 26342 0 2280 1396 "FixupRoomn"
+setv game "mapeditortmp" addm 26342 0 2280 1396 "FixupRoomdd"
+setv game "mapeditortmp" addm 26342 0 2280 1396 "FixupRoommd"
+
+* Add the background files to the fix-up metaroom
+addb va00 "FixupRoomn"
+addb va00 "FixupRoomdd"
+addb va00 "FixupRoommd"
+
+* Set the agent timer
+tick 3
+
+
+** Event scripts
+* Controller timer script
+scrp 1 1 36462 9
+	* Set the agent timer to a reasonable delay
+	tick 200
+	
+	* Get the metaroom ID variable
+	setv va00 ov00
+	
+	* If time = 0 or 3: dusk or dawn
+	doif time eq 0 or time eq 3
+		doif bkgd va00 ne "FixupRoomdd"
+			bkgd va00 "FixupRoomdd" 0
+		endi
+	* If time = 1 or 2: morning or afternoon
+	elif time eq 1 or time eq 2
+		doif bkgd va00 ne "FixupRoommd"
+			bkgd va00 "FixupRoommd" 0
+		endi
+	else
+	* If time = 4: Night
+		doif bkgd va00 ne "FixupRoomn"
+			bkgd va00 "FixupRoomn" 0
+		endi
+	endi
+endm
+
+
+** Removal script
+rscr
+* Enumerate over all agents with the controller classifier and kill them
+enum 1 1 36462
+	setv va00 ov00
+	bkgd va00 "FixupRoom" 0
+	kill targ
+next
