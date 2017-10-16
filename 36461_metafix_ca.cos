@@ -1,0 +1,101 @@
+
+*
+*
+* METAROOM INJECTION SCRIPT
+*
+* This script injects the Cellular Automata emitters.
+*
+
+*
+* ====== CA EMITERS ======
+*
+** Light
+* Upper level
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 27150 208
+emit 1 1
+* Mid level
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 26722 746
+emit 1 1
+* Lower level
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 27487 1128
+emit 1 1
+* Water
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 28015 590
+emit 1 0.7
+*
+** Heat
+* Upper level
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 27150 208
+emit 2 0.7
+* Mid level
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 26722 746
+emit 2 0.6
+* Lower level
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 27487 1128
+emit 2 0.5
+* Water
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 28015 590
+emit 2 0.6
+
+*
+** Nutrient
+* Upper level left
+new: simp 1 1 36461 "blnk" 1 0 1
+attr 16
+mvto 26829 547
+emit 4 0.8
+* Upper level right
+new: simp 1 1 36461 "blnk" 1 0 1
+attr 16
+mvto 27846 464
+emit 4 0.8
+* Mid level
+new: simp 1 1 36461 "blnk" 1 0 1
+attr 16
+mvto 26820 931
+emit 4 0.8
+* Lower level left
+new: simp 1 1 36461 "blnk" 1 0 1
+attr 16
+mvto 26864 1250
+emit 4 1
+* Lower level right
+new: simp 1 1 36461 "blnk" 1 0 1
+attr 16
+mvto 27884 1250
+emit 4 1
+* Water (does water need nutrients? Guess so?)
+new: simp 1 1 36461 "blnk" 1 0 1
+attr 16
+mvto 28108 783
+emit 4 0.5
+
+
+**
+**
+** ======== REMOVAL SCRIPT ==========
+**
+**
+
+rscr
+
+* CA emitters
+enum 1 1 36461
+	kill targ
+next

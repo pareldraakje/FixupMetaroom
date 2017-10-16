@@ -1,0 +1,22 @@
+*
+* ====== CAOS2PRAY CHUNK ======
+*
+
+*# Pray-File "fixup_metaroom.agents"
+*# DS-Name "Fix-up metaroom thing"
+*# desc = "This metaroom needs to be fixed up. Go wild. Do whatever you want."
+*# Agent Animation File = "blnk.c16"
+*# Agent Sprite First Image = 1
+*# Agent Animation Gallery = "blnk"
+*# Web URL = "http://creaturescaves.com/"
+*# Web Label = "Creaturescaves Community Project"
+
+*# depend blnk.c16
+
+*# attach FixupRoom.blk
+
+*# attach fav_metaroomfix.c16
+*# attach fix_door.c16
+*# attach fix_elevine.c16
+
+*# link 36461_metafix_room.cos 36461_metafix_ca.cos 36461_metafix_eledoor.cos 
