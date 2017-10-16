@@ -127,12 +127,12 @@ scrp 2 2 36461 1
 	enum 2 2 36461
 		doif targ ne va01
 			doif ov01 eq va00
-				doif carr eq null
+				doif carr eq null and fall eq 0
 				else
 					doif targ ne null
 						snde "buzz"
 						rtar 1 2 10
-						mesg wrt+ targ 126 "Destination is being carried" ownr 0
+						mesg wrt+ targ 126 "Destination is being carried or is falling" ownr 0
 						stop
 					endi
 				endi
