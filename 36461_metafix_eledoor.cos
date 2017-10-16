@@ -124,29 +124,39 @@ scrp 2 2 36461 1
 	setv va00 ov01
 	seta va01 ownr
 
+
 	enum 2 2 36461
 		doif targ ne va01
 			doif ov01 eq va00
-				doif carr eq null and fall eq 0
-				else
+				doif carr ne null or fall eq 1
 					doif targ ne null
 						snde "buzz"
+						doif carr ne null
 						rtar 1 2 10
-						mesg wrt+ targ 126 "Destination is being carried or is falling" ownr 0
+						mesg wrt+ targ 126 "Destination is being carried" ownr 0
 						stop
+						elif fall eq 1
+						rtar 1 2 10
+						mesg wrt+ targ 126 "Destination is falling" ownr 0
+						stop
+						endi
 					endi
 				endi
+
+				setv va02 posx
+				setv va03 posy
+				setv va04 posb
+
 				doif from eq pntr
-					cmrp posx posy 0
+					cmrp va02 va03 0
 					etch 4 0 0
-						mvft posx posb
+						mvsf va02 va04
 					next
 					stop
-				else
-					mvft posx posb
-					doif from eq norn
-						cmrp posx posy 0
-					endi
+				endi
+				doif from eq norn
+					targ from
+					mvsf va02 va04
 				endi
 			endi
 		endi
