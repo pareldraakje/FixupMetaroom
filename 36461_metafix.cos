@@ -1,0 +1,804 @@
+*
+* ====== CAOS2PRAY CHUNK ======
+*
+
+*# Pray-File "fixup_metaroom.agents"
+*# DS-Name "Fix-up metaroom thing"
+*# desc = "This metaroom needs to be fixed up. Go wild. Do whatever you want."
+*# Agent Animation File = "blnk.c16"
+*# Agent Sprite First Image = 1
+*# Agent Animation Gallery = "blnk"
+*# Web URL = "http://creaturescaves.com/"
+*# Web Label = "Creaturescaves Community Project"
+
+*# depend blnk.c16
+
+*# attach FixupRoom.blk
+
+*# attach fav_metaroomfix.c16
+*# attach fix_door.c16
+*# attach fix_elevine.c16
+
+
+*
+* ====== SETTING MAP DIMENSIONS ======
+*
+mapd 100000 100000
+
+*
+* ====== INJECTING THE METAROOM ======
+*
+
+setv game "mapeditortmp" addm 26342 0 2280 1396 "FixupRoom"
+mmsc 27482 698 ""
+setv va00 addr game "mapeditortmp" 26376 26560 861 861 990 993
+rtyp va00 5
+rmsc 26468 927 ""
+setv game "mapeditortmp_600" va00
+setv va00 addr game "mapeditortmp" 26560 26755 861 861 993 1005
+rtyp va00 5
+rmsc 26657 933 ""
+setv game "mapeditortmp_601" va00
+setv va00 addr game "mapeditortmp" 26755 26950 861 861 1005 987
+rtyp va00 5
+rmsc 26852 924 ""
+setv game "mapeditortmp_602" va00
+setv va00 addr game "mapeditortmp" 26950 27129 861 861 987 987
+rtyp va00 5
+rmsc 27039 924 ""
+setv game "mapeditortmp_603" va00
+setv va00 addr game "mapeditortmp" 27129 27264 861 861 987 993
+rtyp va00 5
+rmsc 27196 927 ""
+setv game "mapeditortmp_604" va00
+setv va00 addr game "mapeditortmp" 26378 26422 1212 1212 1303 1326
+rtyp va00 5
+rmsc 26400 1269 ""
+setv game "mapeditortmp_605" va00
+setv va00 addr game "mapeditortmp" 26422 26600 1212 1212 1326 1323
+rtyp va00 5
+rmsc 26511 1267 ""
+setv game "mapeditortmp_606" va00
+setv va00 addr game "mapeditortmp" 26600 26767 1212 1212 1323 1289
+rtyp va00 5
+rmsc 26683 1250 ""
+setv game "mapeditortmp_607" va00
+setv va00 addr game "mapeditortmp" 26767 26976 1212 1212 1289 1292
+rtyp va00 5
+rmsc 26871 1252 ""
+setv game "mapeditortmp_608" va00
+setv va00 addr game "mapeditortmp" 26976 27186 1212 1212 1292 1318
+rtyp va00 5
+rmsc 27081 1265 ""
+setv game "mapeditortmp_609" va00
+setv va00 addr game "mapeditortmp" 27186 27427 1212 1212 1318 1309
+rtyp va00 5
+rmsc 27306 1260 ""
+setv game "mapeditortmp_610" va00
+setv va00 addr game "mapeditortmp" 27427 27654 1212 1212 1309 1295
+rtyp va00 5
+rmsc 27540 1253 ""
+setv game "mapeditortmp_611" va00
+setv va00 addr game "mapeditortmp" 27654 27840 1212 1212 1295 1287
+rtyp va00 5
+rmsc 27747 1249 ""
+setv game "mapeditortmp_612" va00
+setv va00 addr game "mapeditortmp" 27840 27943 1212 1212 1287 1315
+rtyp va00 5
+rmsc 27891 1263 ""
+setv game "mapeditortmp_613" va00
+setv va00 addr game "mapeditortmp" 27943 28052 1212 1212 1315 1300
+rtyp va00 5
+rmsc 27997 1256 ""
+setv game "mapeditortmp_614" va00
+setv va00 addr game "mapeditortmp" 28052 28271 1159 1159 1300 1197
+rtyp va00 5
+rmsc 28161 1178 ""
+setv game "mapeditortmp_615" va00
+setv va00 addr game "mapeditortmp" 26378 28052 1050 1050 1212 1212
+rtyp va00 0
+rmsc 27215 1131 ""
+setv game "mapeditortmp_616" va00
+setv va00 addr game "mapeditortmp" 28052 28183 966 992 1159 1159
+rtyp va00 0
+rmsc 28117 1062 ""
+setv game "mapeditortmp_617" va00
+setv va00 addr game "mapeditortmp" 26376 27264 710 702 861 861
+rtyp va00 0
+rmsc 26820 785 ""
+setv game "mapeditortmp_618" va00
+setv va00 addr game "mapeditortmp" 27264 27604 702 760 1050 1050
+rtyp va00 0
+rmsc 27434 876 ""
+setv game "mapeditortmp_619" va00
+setv va00 addr game "mapeditortmp" 27860 28052 953 966 1050 1050
+rtyp va00 0
+rmsc 27956 1001 ""
+setv game "mapeditortmp_620" va00
+setv va00 addr game "mapeditortmp" 28183 28271 992 1048 1159 1159
+rtyp va00 0
+rmsc 28227 1075 ""
+setv game "mapeditortmp_621" va00
+setv va00 addr game "mapeditortmp" 27678 27860 915 953 1050 1050
+rtyp va00 0
+rmsc 27769 982 ""
+setv game "mapeditortmp_622" va00
+setv va00 addr game "mapeditortmp" 27604 27678 760 866 1050 1050
+rtyp va00 0
+rmsc 27641 905 ""
+setv game "mapeditortmp_623" va00
+setv va00 addr game "mapeditortmp" 26405 27354 336 336 529 506
+rtyp va00 0
+rmsc 26879 421 ""
+setv game "mapeditortmp_624" va00
+setv va00 addr game "mapeditortmp" 27996 28236 109 226 369 318
+rtyp va00 0
+rmsc 28116 213 ""
+setv game "mapeditortmp_625" va00
+setv va00 addr game "mapeditortmp" 26371 26541 530 526 645 640
+rtyp va00 5
+rmsc 26456 585 ""
+setv game "mapeditortmp_626" va00
+setv va00 addr game "mapeditortmp" 26541 26719 526 522 640 632
+rtyp va00 5
+rmsc 26630 579 ""
+setv game "mapeditortmp_627" va00
+setv va00 addr game "mapeditortmp" 26719 26921 522 517 632 618
+rtyp va00 5
+rmsc 26820 570 ""
+setv game "mapeditortmp_628" va00
+setv va00 addr game "mapeditortmp" 26921 27116 517 512 618 612
+rtyp va00 5
+rmsc 27018 564 ""
+setv game "mapeditortmp_629" va00
+setv va00 addr game "mapeditortmp" 27116 27268 512 508 612 614
+rtyp va00 5
+rmsc 27192 563 ""
+setv game "mapeditortmp_630" va00
+setv va00 addr game "mapeditortmp" 27268 27354 508 506 614 618
+rtyp va00 5
+rmsc 27311 563 ""
+setv game "mapeditortmp_631" va00
+setv va00 addr game "mapeditortmp" 27354 27496 506 476 618 588
+rtyp va00 5
+rmsc 27425 547 ""
+setv game "mapeditortmp_632" va00
+setv va00 addr game "mapeditortmp" 27496 27620 476 449 588 548
+rtyp va00 5
+rmsc 27558 512 ""
+setv game "mapeditortmp_633" va00
+setv va00 addr game "mapeditortmp" 27620 27786 449 414 548 536
+rtyp va00 5
+rmsc 27703 492 ""
+setv game "mapeditortmp_634" va00
+setv va00 addr game "mapeditortmp" 27786 27996 414 369 536 462
+rtyp va00 5
+rmsc 27891 438 ""
+setv game "mapeditortmp_635" va00
+setv va00 addr game "mapeditortmp" 27996 28136 369 339 462 434
+rtyp va00 5
+rmsc 28066 401 ""
+setv game "mapeditortmp_636" va00
+setv va00 addr game "mapeditortmp" 28136 28236 339 318 434 422
+rtyp va00 5
+rmsc 28186 380 ""
+setv game "mapeditortmp_637" va00
+setv va00 addr game "mapeditortmp" 27354 27709 34 51 336 336
+rtyp va00 0
+rmsc 27531 185 ""
+setv game "mapeditortmp_638" va00
+setv va00 addr game "mapeditortmp" 26364 26410 222 188 264 288
+rtyp va00 0
+rmsc 26387 255 ""
+setv game "mapeditortmp_639" va00
+setv va00 addr game "mapeditortmp" 26410 26799 188 44 336 336
+rtyp va00 0
+rmsc 26604 262 ""
+setv game "mapeditortmp_640" va00
+setv va00 addr game "mapeditortmp" 26799 27354 44 34 336 336
+rtyp va00 0
+rmsc 27076 190 ""
+setv game "mapeditortmp_641" va00
+setv va00 addr game "mapeditortmp" 28372 28486 490 621 729 729
+rtyp va00 8
+rmsc 28429 609 ""
+setv game "mapeditortmp_642" va00
+setv va00 addr game "mapeditortmp" 28396 28486 729 729 869 777
+rtyp va00 8
+rmsc 28441 753 ""
+setv game "mapeditortmp_643" va00
+setv va00 addr game "mapeditortmp" 28296 28396 729 729 879 869
+rtyp va00 8
+rmsc 28346 799 ""
+setv game "mapeditortmp_644" va00
+setv va00 addr game "mapeditortmp" 28182 28296 729 729 917 879
+rtyp va00 8
+rmsc 28239 804 ""
+setv game "mapeditortmp_645" va00
+setv va00 addr game "mapeditortmp" 28050 28182 729 729 903 917
+rtyp va00 8
+rmsc 28116 823 ""
+setv game "mapeditortmp_646" va00
+setv va00 addr game "mapeditortmp" 27915 28050 729 729 909 903
+rtyp va00 8
+rmsc 27982 816 ""
+setv game "mapeditortmp_647" va00
+setv va00 addr game "mapeditortmp" 27807 27915 729 729 883 909
+rtyp va00 8
+rmsc 27861 819 ""
+setv game "mapeditortmp_648" va00
+setv va00 addr game "mapeditortmp" 27735 27807 729 729 841 883
+rtyp va00 8
+rmsc 27771 806 ""
+setv game "mapeditortmp_649" va00
+setv va00 addr game "mapeditortmp" 28242 28372 450 490 729 729
+rtyp va00 8
+rmsc 28307 589 ""
+setv game "mapeditortmp_650" va00
+setv va00 addr game "mapeditortmp" 28104 28242 462 450 729 729
+rtyp va00 8
+rmsc 28173 595 ""
+setv game "mapeditortmp_651" va00
+setv va00 addr game "mapeditortmp" 27974 28104 494 462 729 729
+rtyp va00 8
+rmsc 28039 611 ""
+setv game "mapeditortmp_652" va00
+setv va00 addr game "mapeditortmp" 27867 27974 532 494 729 729
+rtyp va00 8
+rmsc 27920 630 ""
+setv game "mapeditortmp_653" va00
+setv va00 addr game "mapeditortmp" 27781 27867 629 532 729 729
+rtyp va00 8
+rmsc 27824 679 ""
+setv game "mapeditortmp_654" va00
+setv va00 addr game "mapeditortmp" 27735 27781 679 629 729 729
+rtyp va00 8
+rmsc 27758 704 ""
+setv game "mapeditortmp_655" va00
+setv va00 addr game "mapeditortmp" 26371 26405 385 336 530 529
+rtyp va00 0
+rmsc 26388 457 ""
+setv game "mapeditortmp_656" va00
+setv va00 addr game "mapeditortmp" 27354 27996 336 336 506 369
+rtyp va00 0
+rmsc 27675 352 ""
+setv game "mapeditortmp_657" va00
+setv va00 addr game "mapeditortmp" 27709 27996 51 109 336 336
+rtyp va00 0
+rmsc 27852 193 ""
+setv game "mapeditortmp_658" va00
+
+door game "mapeditortmp_600" game "mapeditortmp_601" 100
+door game "mapeditortmp_600" game "mapeditortmp_618" 100
+door game "mapeditortmp_601" game "mapeditortmp_602" 100
+door game "mapeditortmp_601" game "mapeditortmp_618" 100
+door game "mapeditortmp_602" game "mapeditortmp_603" 100
+door game "mapeditortmp_602" game "mapeditortmp_618" 100
+door game "mapeditortmp_603" game "mapeditortmp_604" 100
+door game "mapeditortmp_603" game "mapeditortmp_618" 100
+door game "mapeditortmp_604" game "mapeditortmp_618" 100
+door game "mapeditortmp_604" game "mapeditortmp_619" 100
+
+door game "mapeditortmp_605" game "mapeditortmp_606" 100
+door game "mapeditortmp_605" game "mapeditortmp_616" 100
+door game "mapeditortmp_606" game "mapeditortmp_607" 100
+door game "mapeditortmp_606" game "mapeditortmp_616" 100
+door game "mapeditortmp_607" game "mapeditortmp_608" 100
+door game "mapeditortmp_607" game "mapeditortmp_616" 100
+door game "mapeditortmp_608" game "mapeditortmp_609" 100
+door game "mapeditortmp_608" game "mapeditortmp_616" 100
+door game "mapeditortmp_609" game "mapeditortmp_610" 100
+door game "mapeditortmp_609" game "mapeditortmp_616" 100
+
+door game "mapeditortmp_610" game "mapeditortmp_611" 100
+door game "mapeditortmp_610" game "mapeditortmp_616" 100
+door game "mapeditortmp_611" game "mapeditortmp_612" 100
+door game "mapeditortmp_611" game "mapeditortmp_616" 100
+door game "mapeditortmp_612" game "mapeditortmp_613" 100
+door game "mapeditortmp_612" game "mapeditortmp_616" 100
+door game "mapeditortmp_613" game "mapeditortmp_614" 100
+door game "mapeditortmp_613" game "mapeditortmp_616" 100
+door game "mapeditortmp_614" game "mapeditortmp_615" 100
+door game "mapeditortmp_614" game "mapeditortmp_616" 100
+
+door game "mapeditortmp_615" game "mapeditortmp_616" 100
+door game "mapeditortmp_615" game "mapeditortmp_617" 100
+door game "mapeditortmp_615" game "mapeditortmp_621" 100
+door game "mapeditortmp_616" game "mapeditortmp_617" 100
+door game "mapeditortmp_616" game "mapeditortmp_619" 100
+door game "mapeditortmp_616" game "mapeditortmp_620" 100
+door game "mapeditortmp_616" game "mapeditortmp_622" 100
+door game "mapeditortmp_616" game "mapeditortmp_623" 100
+door game "mapeditortmp_617" game "mapeditortmp_620" 100
+door game "mapeditortmp_617" game "mapeditortmp_621" 100
+
+door game "mapeditortmp_618" game "mapeditortmp_619" 100
+door game "mapeditortmp_619" game "mapeditortmp_623" 100
+door game "mapeditortmp_620" game "mapeditortmp_622" 100
+door game "mapeditortmp_622" game "mapeditortmp_623" 100
+door game "mapeditortmp_624" game "mapeditortmp_626" 100
+door game "mapeditortmp_624" game "mapeditortmp_627" 100
+door game "mapeditortmp_624" game "mapeditortmp_628" 100
+door game "mapeditortmp_624" game "mapeditortmp_629" 100
+door game "mapeditortmp_624" game "mapeditortmp_630" 100
+door game "mapeditortmp_624" game "mapeditortmp_631" 100
+
+door game "mapeditortmp_624" game "mapeditortmp_640" 100
+door game "mapeditortmp_624" game "mapeditortmp_641" 100
+door game "mapeditortmp_624" game "mapeditortmp_656" 100
+door game "mapeditortmp_624" game "mapeditortmp_657" 100
+door game "mapeditortmp_625" game "mapeditortmp_636" 100
+door game "mapeditortmp_625" game "mapeditortmp_637" 100
+door game "mapeditortmp_625" game "mapeditortmp_657" 100
+door game "mapeditortmp_625" game "mapeditortmp_658" 100
+door game "mapeditortmp_626" game "mapeditortmp_627" 100
+door game "mapeditortmp_626" game "mapeditortmp_656" 100
+
+door game "mapeditortmp_627" game "mapeditortmp_628" 100
+door game "mapeditortmp_628" game "mapeditortmp_629" 100
+door game "mapeditortmp_629" game "mapeditortmp_630" 100
+door game "mapeditortmp_630" game "mapeditortmp_631" 100
+door game "mapeditortmp_631" game "mapeditortmp_632" 100
+door game "mapeditortmp_632" game "mapeditortmp_633" 100
+door game "mapeditortmp_632" game "mapeditortmp_657" 100
+door game "mapeditortmp_633" game "mapeditortmp_634" 100
+door game "mapeditortmp_633" game "mapeditortmp_657" 100
+door game "mapeditortmp_634" game "mapeditortmp_635" 100
+
+door game "mapeditortmp_634" game "mapeditortmp_657" 100
+door game "mapeditortmp_635" game "mapeditortmp_636" 100
+door game "mapeditortmp_635" game "mapeditortmp_657" 100
+door game "mapeditortmp_636" game "mapeditortmp_637" 100
+door game "mapeditortmp_638" game "mapeditortmp_641" 100
+door game "mapeditortmp_638" game "mapeditortmp_657" 100
+door game "mapeditortmp_638" game "mapeditortmp_658" 100
+door game "mapeditortmp_639" game "mapeditortmp_640" 100
+door game "mapeditortmp_640" game "mapeditortmp_641" 100
+door game "mapeditortmp_642" game "mapeditortmp_643" 100
+
+door game "mapeditortmp_642" game "mapeditortmp_644" 100
+door game "mapeditortmp_642" game "mapeditortmp_650" 100
+door game "mapeditortmp_643" game "mapeditortmp_644" 100
+door game "mapeditortmp_644" game "mapeditortmp_645" 100
+door game "mapeditortmp_644" game "mapeditortmp_650" 100
+door game "mapeditortmp_645" game "mapeditortmp_646" 100
+door game "mapeditortmp_645" game "mapeditortmp_650" 100
+door game "mapeditortmp_645" game "mapeditortmp_651" 100
+door game "mapeditortmp_646" game "mapeditortmp_647" 100
+door game "mapeditortmp_646" game "mapeditortmp_651" 100
+
+door game "mapeditortmp_646" game "mapeditortmp_652" 100
+door game "mapeditortmp_647" game "mapeditortmp_648" 100
+door game "mapeditortmp_647" game "mapeditortmp_652" 100
+door game "mapeditortmp_647" game "mapeditortmp_653" 100
+door game "mapeditortmp_648" game "mapeditortmp_649" 100
+door game "mapeditortmp_648" game "mapeditortmp_653" 100
+door game "mapeditortmp_648" game "mapeditortmp_654" 100
+door game "mapeditortmp_649" game "mapeditortmp_654" 100
+door game "mapeditortmp_649" game "mapeditortmp_655" 100
+door game "mapeditortmp_650" game "mapeditortmp_651" 100
+
+door game "mapeditortmp_651" game "mapeditortmp_652" 100
+door game "mapeditortmp_652" game "mapeditortmp_653" 100
+door game "mapeditortmp_653" game "mapeditortmp_654" 100
+door game "mapeditortmp_654" game "mapeditortmp_655" 100
+door game "mapeditortmp_657" game "mapeditortmp_658" 100
+
+delg "mapeditortmp_600"
+delg "mapeditortmp_601"
+delg "mapeditortmp_602"
+delg "mapeditortmp_603"
+delg "mapeditortmp_604"
+delg "mapeditortmp_605"
+delg "mapeditortmp_606"
+delg "mapeditortmp_607"
+delg "mapeditortmp_608"
+delg "mapeditortmp_609"
+delg "mapeditortmp_610"
+delg "mapeditortmp_611"
+delg "mapeditortmp_612"
+delg "mapeditortmp_613"
+delg "mapeditortmp_614"
+delg "mapeditortmp_615"
+delg "mapeditortmp_616"
+delg "mapeditortmp_617"
+delg "mapeditortmp_618"
+delg "mapeditortmp_619"
+delg "mapeditortmp_620"
+delg "mapeditortmp_621"
+delg "mapeditortmp_622"
+delg "mapeditortmp_623"
+delg "mapeditortmp_624"
+delg "mapeditortmp_625"
+delg "mapeditortmp_626"
+delg "mapeditortmp_627"
+delg "mapeditortmp_628"
+delg "mapeditortmp_629"
+delg "mapeditortmp_630"
+delg "mapeditortmp_631"
+delg "mapeditortmp_632"
+delg "mapeditortmp_633"
+delg "mapeditortmp_634"
+delg "mapeditortmp_635"
+delg "mapeditortmp_636"
+delg "mapeditortmp_637"
+delg "mapeditortmp_638"
+delg "mapeditortmp_639"
+delg "mapeditortmp_640"
+delg "mapeditortmp_641"
+delg "mapeditortmp_642"
+delg "mapeditortmp_643"
+delg "mapeditortmp_644"
+delg "mapeditortmp_645"
+delg "mapeditortmp_646"
+delg "mapeditortmp_647"
+delg "mapeditortmp_648"
+delg "mapeditortmp_649"
+delg "mapeditortmp_650"
+delg "mapeditortmp_651"
+delg "mapeditortmp_652"
+delg "mapeditortmp_653"
+delg "mapeditortmp_654"
+delg "mapeditortmp_655"
+delg "mapeditortmp_656"
+delg "mapeditortmp_657"
+delg "mapeditortmp_658"
+
+
+*
+* ====== INJECTING FAVPLACE ======
+*
+new: simp 1 3 36461 "fav_metaroomfix" 1 0 1
+attr 272
+mvto 26527 822
+tick 1
+
+*
+* ====== INJECTING ELEVINES ======
+*
+**Upper
+new: simp 3 1 36461 "fix_elevine" 4 0 1
+* attr: activateable (4) + collision (64) + physics (128) = 196
+* bhvr: act1 (1) + act2 (2) = 3
+attr 196
+bhvr 3
+perm 100
+fric 100
+elas 0
+accg 1
+aero 1
+core 0 80 0 50
+mvsf 26628 518
+
+**Mid
+new: simp 3 1 36461 "fix_elevine" 4 0 1
+* attr: activateable (4) + collision (64) + physics (128) = 196
+* bhvr: act1 (1) + act2 (2) = 3
+attr 196
+bhvr 3
+perm 100
+fric 100
+elas 0
+accg 1
+aero 1
+core 0 80 0 50
+mvsf 26628 910
+
+**Lower
+new: simp 3 1 36461 "fix_elevine" 4 0 1
+* attr: activateable (4) + collision (64) + physics (128) = 196
+* bhvr: act1 (1) + act2 (2) = 3
+attr 196
+bhvr 3
+perm 100
+fric 100
+elas 0
+accg 1
+aero 1
+core 0 80 0 50
+mvsf 26628 1231
+
+*
+* ====== INJECTING DOORS ======
+*
+** DOOR INSIDE METAROOM
+new: simp 2 2 36461 "fix_door" 2 0 300
+* attr: activateable (4) + collision (64) + physics (128) = 196
+* bhvr: act1 (1)
+attr 196
+bhvr 1
+perm 100
+fric 100
+elas 0
+accg 1
+aero 1
+setv ov01 1
+mvto 26409 879
+
+** INJECTED DOOR
+new: simp 2 2 36461 "fix_door" 2 0 300
+* attr: mouseable (2), activateable (4), collide (64) and physics (128) = 198
+* bhvr: act1 (1)
+attr 198
+bhvr 1
+accg 1
+aero 0
+fric 60
+elas 30
+setv ov01 1
+mvsf game "CreatorX" game "CreatorY"
+
+*
+* ====== CA LINKS ======
+*
+
+* Elevine CAs
+setv va01 grap 26628 601
+setv va02 grap 26628 959
+setv va03 grap 26628 1272
+link va01 va02 40
+link va02 va03 40
+
+* Air connection
+setv va01 grap 27006 283
+setv va02 grap 27006 407
+link va01 va02 100
+setv va01 grap 27753 985
+setv va02 grap 27753 1077
+link va01 va02 100
+
+* Water connection
+setv va01 grap 28131 680
+setv va02 grap 28131 750
+link va01 va02 100
+
+*
+* ====== CA EMITERS ======
+*
+** Light
+* Upper level
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 27150 208
+emit 1 1
+* Mid level
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 26722 746
+emit 1 1
+* Lower level
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 27487 1128
+emit 1 1
+* Water
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 28015 590
+emit 1 0.7
+*
+** Heat
+* Upper level
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 27150 208
+emit 2 0.7
+* Mid level
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 26722 746
+emit 2 0.6
+* Lower level
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 27487 1128
+emit 2 0.5
+* Water
+new: simp 1 1 36461 "blnk" 1 1 1
+attr 16
+mvto 28015 590
+emit 2 0.6
+
+*
+** Nutrient
+* Upper level left
+new: simp 1 1 36461 "blnk" 1 0 1
+attr 16
+mvto 26829 547
+emit 4 0.8
+* Upper level right
+new: simp 1 1 36461 "blnk" 1 0 1
+attr 16
+mvto 27846 464
+emit 4 0.8
+* Mid level
+new: simp 1 1 36461 "blnk" 1 0 1
+attr 16
+mvto 26820 931
+emit 4 0.8
+* Lower level left
+new: simp 1 1 36461 "blnk" 1 0 1
+attr 16
+mvto 26864 1250
+emit 4 1
+* Lower level right
+new: simp 1 1 36461 "blnk" 1 0 1
+attr 16
+mvto 27884 1250
+emit 4 1
+* Water (does water need nutrients? Guess so?)
+new: simp 1 1 36461 "blnk" 1 0 1
+attr 16
+mvto 28108 783
+emit 4 0.5
+
+
+*
+* ====== SCRIPTS ======
+*
+
+*
+** DOOR SCRIPT
+
+** BUG: If one of the doors is in the inventory and offscreen, this throws an error.
+** For all you amazing fixer-uppers: feel free to fix this bug. ;) <-- I fixed it Pilla, for real this time :D
+** Thanks to Verm for finding the bug!
+
+
+scrp 2 2 36461 1
+	anim [1 0 1 0]
+	over
+	setv va00 ov01
+	seta va01 ownr
+
+	enum 2 2 36461
+		doif targ ne va01
+			doif ov01 eq va00
+				doif carr eq null
+				else
+					doif targ ne null
+						snde "buzz"
+						rtar 1 2 10
+						mesg wrt+ targ 126 "Destination is being carried" ownr 0
+						stop
+					endi
+				endi
+				doif from eq pntr
+					cmrp posx posy 0
+					etch 4 0 0
+						mvft posx posb
+					next
+					stop
+				else
+					mvft posx posb
+					doif from eq norn
+						cmrp posx posy 0
+					endi
+				endi
+			endi
+		endi
+	next
+endm
+
+
+*
+** ELEVATOR PUSH SCRIPT - UP
+
+scrp 3 1 36461 1
+	setv va00 ov01
+	seta va01 ownr
+	setv va02 posy
+
+	doif from eq pntr
+		anim [3 0 3 0]
+	else
+		anim [2 0 2 0]
+	endi
+
+	over
+	enum 3 1 36461
+		doif targ ne ownr
+			doif va01 eq ownr
+				doif posy lt va02
+					seta va01 targ
+				endi
+			else
+				doif posy lt va02
+** do nothing
+				else
+					seta va01 targ
+				endi
+			endi
+
+			doif va01 eq targ
+				setv va02 posy
+			endi
+		endi
+	next
+
+	targ va01
+	setv va04 posx
+	setv va05 posb
+
+	doif from eq pntr
+** Do nothing
+	else
+		targ from
+
+		mvsf va04 va05
+		doif from eq norn
+			cmrp posx posy 0
+		endi
+	endi
+endm
+
+*
+** ELEVATOR PULL SCRIPT - DOWN
+
+scrp 3 1 36461 2
+	setv va00 ov01
+	seta va01 ownr
+	setv va02 posy
+
+
+	doif from eq pntr
+		anim [3 0 3 0]
+	else
+		anim [1 0 1 0]
+	endi
+	over
+	enum 3 1 36461
+		doif targ ne ownr
+			doif va01 eq ownr
+				doif posy gt va02
+					seta va01 targ
+				endi
+			else
+				doif posy gt va02
+** do nothing
+				else
+					seta va01 targ
+				endi
+			endi
+
+			doif va01 eq targ
+				setv va02 posy
+			endi
+		endi
+	next
+
+	targ va01
+	setv va04 posx
+	setv va05 posb
+
+	targ from
+	mvft va04 va05
+	doif from eq norn
+		cmrp posx posy 0
+	endi
+endm
+
+
+**
+**
+** ======== REMOVAL SCRIPT ==========
+**
+**
+
+rscr
+
+enum 1 1 36461
+	kill targ
+next
+enum 2 2 36461
+	kill targ
+next
+enum 3 1 36461
+	kill targ
+next
+enum 1 3 36461
+	kill targ
+next
+enum 1 4 36461
+	kill targ
+next
