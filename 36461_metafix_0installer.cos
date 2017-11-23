@@ -2,6 +2,15 @@
 * ====== CAOS2PRAY CHUNK ======
 *
 
+
+**
+** How to compile:
+** Open Monk (part of the Jagent suite)
+** Deselect "merge files" in Monk.
+** Drop this file in Monk.
+** Profit.
+**
+
 *# Pray-File "fixup_metaroom.agents"
 *# DS-Name "Fix-up metaroom thing"
 *# desc = "This metaroom needs to be fixed up. Go wild. Do whatever you want."
