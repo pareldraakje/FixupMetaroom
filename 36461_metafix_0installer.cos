@@ -6,6 +6,7 @@
 **
 ** How to compile:
 ** Open Monk (part of the Jagent suite:  https://creatures.wiki/Jagent)
+** Select "PRAY Chunk" in Monk.
 ** Make sure all relevant files are in the same folder as this file.
 ** Deselect "merge files" in Monk.
 ** Drop this file in Monk.
