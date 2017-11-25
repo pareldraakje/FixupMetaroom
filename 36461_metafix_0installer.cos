@@ -5,10 +5,12 @@
 
 **
 ** How to compile:
-** Open Monk (part of the Jagent suite)
+** Open Monk (part of the Jagent suite:  https://creatures.wiki/Jagent)
+** Select "PRAY Chunk" in Monk.
+** Make sure all relevant files are in the same folder as this file.
 ** Deselect "merge files" in Monk.
 ** Drop this file in Monk.
-** Profit.
+** Profit. (There will suddenly appear an .agents file in the same folder as this file.)
 **
 
 *# Pray-File "fixup_metaroom.agents"
