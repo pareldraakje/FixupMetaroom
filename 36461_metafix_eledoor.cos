@@ -259,7 +259,7 @@ scrp 3 1 36461 2
 	setv va05 posb
 
 	targ from
-	mvft va04 va05
+	mvsf va04 va05
 	doif from eq norn
 		cmrp posx posy 0
 	endi
